@@ -40,7 +40,9 @@
   },
   "name":"Overheated",
   "resources":[
+    {"id":{"name":"fnTimer","path":"fonts/fnTimer/fnTimer.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
+    {"id":{"name":"oControl","path":"objects/oControl/oControl.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"Level1Room","path":"rooms/Level1Room/Level1Room.yy",},},

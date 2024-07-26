@@ -2,6 +2,37 @@
 var _i = get_gamepad();
 get_controls(_i);
 
+// setting heat
+if x_spd == spd || x_spd == -spd {
+	if heat_timer < heat_frames {
+		heat_timer++;
+	} else if heat_timer == heat_frames {
+		heat_timer = 0;
+		if heat < 6 {
+			heat += 1;
+		}
+	}
+} else if heat_timer > 0 {
+	heat_timer--;
+	if heat_timer == 0 {
+		heat_timer = heat_frames-1;
+		if heat > 0 {
+			heat--;
+		}
+	}
+}
+
+if heat == 5 {
+	heat_extra = 0.5;
+} else if heat == 6 {
+	heat_extra = 1.5;
+} else {
+	heat_extra = 0;
+}
+// speed
+spd = 4 + (heat/2) + heat_extra;
+air_spd = spd;
+
 // saving poisition for point direction
 last_y = y;
 last_x = x;

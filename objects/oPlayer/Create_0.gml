@@ -12,6 +12,8 @@ jump_power = 6;
 coyote_frames = 3;
 walls = oWall;
 wall_slide_spd = 0.5;
+heat_scale = 1;
+heat_frames = 30;
 
 // vars
 x_spd = 0;
@@ -31,3 +33,6 @@ x_scale = 0;
 face = 1;
 last_x = 0;
 last_y = 0;
+heat = 0;
+heat_timer = 0;
+heat_extra = 0;
